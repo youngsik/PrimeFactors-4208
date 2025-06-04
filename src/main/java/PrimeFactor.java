@@ -14,6 +14,11 @@ public class PrimeFactor {
                 }
 
             }
+            else if (number==6)
+            {
+                factors.add(2);
+                factors.add(3);
+            }
             else {
 
                 factors.add(number);

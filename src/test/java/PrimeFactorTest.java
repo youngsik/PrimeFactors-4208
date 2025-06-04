@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PrimeFactorTest {
     PrimeFactor primeFactor;
+
     @BeforeEach
     void setUp() {
         primeFactor = new PrimeFactor();
@@ -34,5 +35,10 @@ class PrimeFactorTest {
     @Test
     void testPrimefactorOf6() {
         assertEquals(Arrays.asList(2,3),primeFactor.of(6));
+    }
+
+    @Test
+    void testPrimefactorOf9() {
+        assertEquals(Arrays.asList(3,3),primeFactor.of(9));
     }
 }

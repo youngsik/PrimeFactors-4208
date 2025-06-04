@@ -7,8 +7,17 @@ public class PrimeFactor {
         if (number>1){
             if (number==4)
             {
-                factors.add(2);
-                factors.add(2);
+                if(number %2 ==0)
+                {
+                    factors.add(2);
+                    number/=2;
+                }
+                if(number %2 ==0)
+                {
+                    factors.add(2);
+                    number/=2;
+                }
+
             }
             else {
 
